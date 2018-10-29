@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gossip Project</title>
+    </head>
+    <body class="p-3 mb-2">
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link active" <%= link_to "Team", team_path %>
+            <a class="nav-item nav-link active" <%= link_to "Contact", contact_path %>
+        </nav>
+
+        <p class="display-2 text-center mt-5 mb-5">Bienvenue <%= params[:name]%></p>
+        
+        <div class="row justify-content-around col-md-12">
+        <% @gossips.each do |gossip| %>
+            <div class="card row col-md-3 mb-4 mr-3" style="width: 18rem;">
+            <img class="card-img-top" <%= image_tag 'blabla.jpg' %>
+            <div class="card-body">
+                <h5 class="card-title"><%= gossip.author %></h5>
+                <p class="card-text"><%= gossip.content %></p>
+                <%= link_to "Go to the gossip", gossip_path(gossip.author) %> 
+            </div>
+            </div>
+        <% end %>
+        </div>
+      
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <%= link_to "Contact", contact_path %>
+        </div>
+    </footer>
+
+    
+</html>

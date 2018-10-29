@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gossip Project</title>
+    </head>
+    <body class="p-3 mb-2">
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link active" <%= link_to "Team", team_path %>
+            <a class="nav-item nav-link active" <%= link_to "Contact", contact_path %>
+        </nav>
+
+        <p class="display-2 text-center mt-5 mb-5">Contacter la Team</p>
+
+        <div class="row featurette border rounded">
+          <div id ="coral" class="col-md-7">
+            <h2 class="featurette-heading">Salim BOUMEDIENE.<br> <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">0606060606</p><p class="lead">j'habite au Village</p>          </div>
+          <div class="col-md-5">
+            <img class="bg-black featurette-image img-fluid mx-auto" <%= image_tag '4250901-goku-wallpaper-hd.jpg' %>
+          </div>
+        </div>
+
+        <div class="row featurette border rounded mt-5">
+            <div class="col-md-7">
+                <img class="bg-black featurette-image img-fluid mx-auto" <%= image_tag 'yamsha.jpg' %>
+            </div>
+            <div id ="coral" class="col-md-5">
+                <h2 class="featurette-heading">Khalil SAGHOUR.<br> <span class="text-muted">It'll blow your mind.</span></h2>
+                <p class="lead">0606060606</p><p class="lead">j'habite au Village</p>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Contact.</span>
+            </div>
+        </footer>
+    </body>
+</html>

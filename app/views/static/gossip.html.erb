@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gossip Project</title>
+    </head>
+    <body class="p-3 mb-2">
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link active" <%= link_to "Team", team_path %>
+            <a class="nav-item nav-link active" <%= link_to "Contact", contact_path %>
+        </nav>
+    
+    <% Potin.all.each do |gossip| %>
+            <% if gossip.author == params[:gossip]%>
+            <div class="card row col-md-3 mb-4 mr-3" style="width: 18rem;">
+            <div class="card-body">
+            <img class="card-img-top" <%= image_tag 'blabla.jpg' %>
+                <h5 class="card-title"><%= gossip.author %></h5>
+                <p class="card-text"><%= gossip.content %></p>
+            <%end%>
+            </div>
+            </div>
+        <% end %>
+
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <%= link_to "Contact", contact_path %>
+        </div>
+    </footer>
+</html>
