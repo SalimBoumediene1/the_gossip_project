@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gossip Project</title>
+    </head>
+    <body class="p-3 mb-2">
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link active" <%= link_to "Team", team_path %>
+            <a class="nav-item nav-link active" <%= link_to "Contact", contact_path %>
+        </nav>
+
+        <p class="display-3 text-center  mt-5 mb-5">Bienvenue sur the Gossip Hacking</p>
+
+        <form action="url_de_l'action" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="text" name="author"><br>
+            <input type="text" name="content"><br>
+            <input type="submit" value="Envoyer le formulaire">
+        </form>
+
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <%= link_to "Contact", contact_path %>
+        </div>
+    </footer>
+
+    
+</html>

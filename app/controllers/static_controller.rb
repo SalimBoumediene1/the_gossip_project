@@ -1,4 +1,8 @@
 class StaticController < ApplicationController
+    #affiche la page d'acceuil
+    def index
+    end
+
     #page d'affichage de la team
     def team
     end
