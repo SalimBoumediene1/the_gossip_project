@@ -35,11 +35,27 @@
                 <h2 class="featurette-heading">Khalil SAGHOUR.<br> <span class="text-muted">It'll blow your mind.</span></h2>
                 <p class="lead">0606060606</p><p class="lead">j'habite au Village</p>
         </div>
-
-        <footer class="footer">
-            <div class="container">
-                <span class="text-muted">Contact.</span>
+        <div class="row featurette border rounded">
+          <div id ="coral" class="col-md-7">
+            <h2 class="featurette-heading">Kenadi DURBAN.<br> <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">0606060606</p><p class="lead">j'habite au Village</p>          </div>
+          <div class="col-md-5">
+            <img class="bg-black featurette-image img-fluid mx-auto" <%= image_tag '4250901-goku-wallpaper-hd.jpg' %>
+          </div>
+        </div>
+        <div class="row featurette border rounded mt-5">
+            <div class="col-md-7">
+                <img class="bg-black featurette-image img-fluid mx-auto" <%= image_tag 'yamsha.jpg' %>
             </div>
-        </footer>
+            <div id ="coral" class="col-md-5">
+                <h2 class="featurette-heading">Jolan LACROIX.<br> <span class="text-muted">It'll blow your mind.</span></h2>
+                <p class="lead">0606060606</p><p class="lead">j'habite au Village</p>
+        </div>
+
+        <footer class="footer bottom-fixed">
+        <div class="container">
+            <%= link_to "Contact", contact_path %>
+        </div>
+    </footer>
     </body>
 </html>
