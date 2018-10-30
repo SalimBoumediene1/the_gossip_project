@@ -4,6 +4,35 @@
 
 https://gossip-project-team-comete.herokuapp.com/
 
+# Présentation
+nom            | Pseudo Slack
+ ------------  | -------------
+Saghour khalil | @saghour khalil
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Boumedine Salim| @SaSSou
+
+nom            | Pseudo Slack
+ ------------  | -------------
+Durban kenadi  | @Kenadi.S
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Potie Quentin  | @TinQk
+
+nom            | Pseudo Slack
+ ------------  | -------------
+Jolan Lacroix  | @JOLLACRO
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Jiffard Joslin | @Redcozmo
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Palma Andréa   | @plm
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
